@@ -31,7 +31,7 @@ pdf: $(pdfs)
 	       echo "\fancyfoot[R]{\small\color{commithashcolor} Commit: $$commit}" >> $@
 
 %.pdf: %.tex %.ghead
-	latexmk -pdf -pdflatex="pdflatex -interactive=nonstopmode" -use-make $<
+	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make $<
 	rm -f *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
 	rm -f *.fdb_latexmk
 
