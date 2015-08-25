@@ -11,7 +11,7 @@
 \geometry{letterpaper}
 % Use 0.75in margins on the top and bottom.
 % This uses more paper than rst2latex normally does (it has huge margins).
-\geometry{vmargin=0.75in}
+\geometry{vmargin=1in}
 % Also, include headers and footers in this, because my printer otherwise cuts
 % them off when printing double-sided.
 \geometry{includeheadfoot}
