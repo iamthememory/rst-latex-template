@@ -23,8 +23,8 @@ pdf: $(pdfs)
 	echo "\fancyhf{} % Clear headers and footers" >> $@
 	echo "\fancyfoot[C]{\thepage} % Keep the page number" >> $@
 	commit="$$(git log -n 1 --abbrev=12 --pretty=format:%h -- $<)" && \
-	       modauthor="$$(git log --pretty=format:%aN $$commit)" && \
-	       moddate="$$(git log --pretty=format:%cD $$commit)" && \
+	       modauthor="$$(git log -n 1 --pretty=format:%aN $$commit)" && \
+	       moddate="$$(git log -n 1 --pretty=format:%cD $$commit)" && \
 	       echo "\fancyhead[L]{$${modauthor}}%" >> $@ && \
 	       echo "\fancyhead[R]{$${moddate}}%" >> $@ && \
 	       echo "\fancyfoot[R]{\small\color{pageonecommithashcolor} Commit: $$commit}}" >> $@ && \
