@@ -32,6 +32,8 @@ pdf: $(pdfs)
 
 %.pdf: %.tex %.ghead
 	latexmk -pdf -pdflatex="pdflatex -interactive=nonstopmode" -use-make $<
+	rm -f *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
+	rm -f *.fdb_latexmk
 
 clean:
 	rm -f *.tex *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
