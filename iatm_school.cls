@@ -48,4 +48,23 @@
 %\fancyhead[OR,EL]{Outer}
 \fancypagestyle{plain}{\fancyhf{}\fancyhead[R]{Lol}}
 
+% Define various mathematical stuff.
+\RequirePackage{amsfonts}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+% Grow outer delimiters (like parentheses).
+\delimitershortfall -1sp
+% The 'dx' in '\int ... dx' or 'dy/dx'
+% Use as \diff{x}
+\newcommand*{\diff}[1]{\mathop{}\!\mathrm{d}#1}
+% dy/dx
+% Use as \Diff{y}{x}
+\newcommand*{\Diff}[2]{\frac{\diff{#1}}{\diff{#2}}}
+% Absolute value
+\newcommand*{\abs}[1]{\left|#1\right|}
+% LaTeX fails to reasonably render \Longrightarrow above 10pt.
+% Use \Rightarrow instead.
+% From amsmath.sty
+\renewcommand*{\implies}{\DOTSB\;\Rightarrow\;}
+
 % vim: set ft=tex:
