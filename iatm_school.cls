@@ -109,4 +109,7 @@
 % Vector cross product.
 \newcommand*{\vcross}[2]{\vect{#1} \times \vect{#2}}
 
+% Rays.
+\newcommand*{\ray}[1]{\overrightarrow{#1}}
+
 % vim: set ft=tex:
