@@ -38,9 +38,9 @@ pdf: $(pdfs)
 %.png: %.gp
 	gnuplot $<
 
-clean:
-	rm -f *.tex *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
-	rm -f *.fdb_latexmk *.ghead *.png
+%.png: %.svg
+	inkscape -d 90 -f $< -e $@
+
 
 reallyclean: clean
 	rm -f *.pdf
