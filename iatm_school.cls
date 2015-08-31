@@ -96,4 +96,7 @@
   \hat{\vect{\IfStrEqCase{#1}{{i}{\imath}{j}{\jmath}}[#1]}}
 }
 
+% Vector dot product shortcut.
+\newcommand*{\vectdot}[2]{\vect{#1} \cdot \vect{#2}}
+
 % vim: set ft=tex:
