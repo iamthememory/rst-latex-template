@@ -1,0 +1,11 @@
+# Ignore files generated when building PDFs.
+*.aux
+*.fdb_latexmk
+*.fls
+*.ghead
+*.log
+*.out
+*.pdf
+*.png
+*.tex
+*.toc
