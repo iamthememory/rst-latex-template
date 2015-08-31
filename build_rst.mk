@@ -1,3 +1,7 @@
+# Get the path of the LaTeX template.
+# Partially from <http://stackoverflow.com/a/23324703/4535462>
+RST_LATEX_TEMPLATE_DIR := $(shell dirname "$(realpath $(lastword $(MAKEFILE_LIST)))")
+
 RST2LATEX = rst2latex.py
 RST2LATEXFLAGS = $(RST2LATEXDOCFLAGS) $(RST2LATEXCLASS) --smart-quotes=yes
 
@@ -15,7 +19,8 @@ pdf: $(pdfs)
 
 # Build the LaTeX from ReST.
 %.tex: %.rst
-	$(RST2LATEX) $(RST2LATEXFLAGS) \
+	TEXMFHOME="$(RST_LATEX_TEMPLATE_DIR):$$TEXMFHOME" $(RST2LATEX) \
+		$(RST2LATEXFLAGS) \
 		--latex-preamble="\input{$(patsubst %.rst,%.ghead,$<)}" $< $@
 
 %.ghead: %.rst
