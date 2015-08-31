@@ -35,9 +35,12 @@ pdf: $(pdfs)
 	rm -f *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
 	rm -f *.fdb_latexmk
 
+%.png: %.gp
+	gnuplot $<
+
 clean:
 	rm -f *.tex *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
-	rm -f *.fdb_latexmk *.ghead
+	rm -f *.fdb_latexmk *.ghead *.png
 
 reallyclean: clean
 	rm -f *.pdf
