@@ -7,7 +7,7 @@ To add it to your repository,
 
 1. Add it as a submodule in your git repository::
 
-    $ git submodule add https://github.com/iamthememory/rst-latex-template
+    $ git submodule add https://github.com/iamthememory/rst-latex-template.git
 
 2. Then, put the following in ``Makefile`` for each directory you want to
    recurse from::
