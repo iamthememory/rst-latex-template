@@ -56,6 +56,9 @@
 \RequirePackage{amsfonts}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
+
+% Various symbols (e.g. \degree)
+\RequirePackage{gensymb}
 % Grow outer delimiters (like parentheses).
 \delimitershortfall -1sp
 % The 'dx' in '\int ... dx' or 'dy/dx'
