@@ -103,4 +103,7 @@
 \DeclareMathOperator{\proj}{proj}
 \newcommand*{\vproj}[2]{\proj_{\vect{#1}} \left(\vect{#2}\right)}
 
+% Vector distance.
+\DeclareMathOperator{\vdist}{d}
+
 % vim: set ft=tex:
