@@ -99,4 +99,8 @@
 % Vector dot product shortcut.
 \newcommand*{\vectdot}[2]{\vect{#1} \cdot \vect{#2}}
 
+% Vector projections.
+\DeclareMathOperator{\proj}{proj}
+\newcommand*{\vproj}[2]{\proj_{\vect{#1}} \left(\vect{#2}\right)}
+
 % vim: set ft=tex:
