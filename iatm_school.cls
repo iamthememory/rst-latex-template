@@ -59,6 +59,10 @@
 
 % Various symbols (e.g. \degree)
 \RequirePackage{gensymb}
+
+% Provides \IfStrEqCase
+\RequirePackage{xstring}
+
 % Grow outer delimiters (like parentheses).
 \delimitershortfall -1sp
 
@@ -86,5 +90,10 @@
 
 % Use vect for vectors.
 \newcommand*{\vect}[1]{\boldsymbol{#1}}
+
+% Unit vectors.
+\newcommand*{\uvect}[1]{%
+  \hat{\vect{\IfStrEqCase{#1}{{i}{\imath}{j}{\jmath}}[#1]}}
+}
 
 % vim: set ft=tex:
