@@ -75,7 +75,9 @@
 
 % LaTeX fails to reasonably render \Longrightarrow above 10pt.
 % Use \Rightarrow instead.
+% Do the same with \impliedby.
 % From amsmath.sty
 \renewcommand*{\implies}{\DOTSB\;\Rightarrow\;}
+\renewcommand*{\impliedby}{\DOTSB\;\Leftarrow\;}
 
 % vim: set ft=tex:
