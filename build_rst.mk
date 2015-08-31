@@ -1,6 +1,6 @@
 # Get the path of the LaTeX template.
 # Partially from <http://stackoverflow.com/a/23324703/4535462>
-RST_LATEX_TEMPLATE_DIR := $(shell dirname "$(realpath $(lastword $(MAKEFILE_LIST)))")
+RST_LATEX_TEMPLATE_DIR := $(shell dirname "$(realpath $(lastword $(MAKEFILE_LIST)))")/texmf/
 
 RST2LATEX = rst2latex.py
 RST2LATEXFLAGS = $(RST2LATEXDOCFLAGS) $(RST2LATEXCLASS) --smart-quotes=yes
