@@ -80,4 +80,7 @@
 \renewcommand*{\implies}{\DOTSB\;\Rightarrow\;}
 \renewcommand*{\impliedby}{\DOTSB\;\Leftarrow\;}
 
+% Use vect for vectors.
+\newcommand*{\vect}[1]{\boldsymbol{#1}}
+
 % vim: set ft=tex:
