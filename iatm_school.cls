@@ -33,6 +33,10 @@
 % Use French spacing (no double spaces after a sentence).
 \frenchspacing
 
+% Space out paragraphs, don't indent.
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
 % Prettify the PDF output.
 \RequirePackage{microtype}
 
