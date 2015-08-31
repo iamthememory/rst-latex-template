@@ -70,8 +70,12 @@
 % Use as \Diff{y}{x}
 \newcommand*{\Diff}[2]{\frac{\diff{#1}}{\diff{#2}}}
 
-% Absolute value
+% Absolute value and norm.
 \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+% Norm for plain vectors.
+\newcommand*{\vnorm}[1]{\norm{\vect{#1}}}
 
 % LaTeX fails to reasonably render \Longrightarrow above 10pt.
 % Use \Rightarrow instead.
