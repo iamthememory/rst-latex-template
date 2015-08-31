@@ -112,4 +112,7 @@
 % Rays.
 \newcommand*{\ray}[1]{\overrightarrow{#1}}
 
+% Line segments.
+\newcommand*{\lineseg}[1]{\overline{#1}}
+
 % vim: set ft=tex:
