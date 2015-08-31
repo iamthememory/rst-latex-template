@@ -106,4 +106,7 @@
 % Vector distance.
 \DeclareMathOperator{\vdist}{d}
 
+% Vector cross product.
+\newcommand*{\vcross}[2]{\vect{#1} \times \vect{#2}}
+
 % vim: set ft=tex:
