@@ -19,8 +19,7 @@ pdf: $(pdfs)
 
 # Build the LaTeX from ReST.
 %.tex: %.rst
-	TEXMFHOME="$(RST_LATEX_TEMPLATE_DIR):$$TEXMFHOME" $(RST2LATEX) \
-		$(RST2LATEXFLAGS) \
+	$(RST2LATEX) $(RST2LATEXFLAGS) \
 		--latex-preamble="\input{$(patsubst %.rst,%.ghead,$<)}" $< $@
 
 %.ghead: %.rst
@@ -51,7 +50,8 @@ pdf: $(pdfs)
 		echo "\fancyfoot[R]{\small\color{commithashcolor} Commit: $$commit}" >> $@
 
 %.pdf: %.tex %.ghead
-	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make $<
+	export TEXMFHOME="$(RST_LATEX_TEMPLATE_DIR):$$TEXMFHOME" && \
+		latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make $<
 	rm -f *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
 	rm -f *.fdb_latexmk
 
