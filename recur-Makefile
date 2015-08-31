@@ -1,6 +1,3 @@
-# Add the directories to recurse into here.
-SUBDIRS =
-
 SUBCLEAN = $(addsuffix .clean,$(SUBDIRS))
 SUBREALLYCLEAN = $(addsuffix .reallyclean,$(SUBDIRS))
 
