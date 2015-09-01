@@ -134,4 +134,29 @@
   \end{array}\right]
 }
 
+% Show matrix row operations.
+% Taken almost completely from <http://tex.stackexchange.com/a/3149>
+% Use like:
+% \arrows{NUMBER OF ROWS}{ROW 1 OP}{ROW 2 OP}{}{ROW 4 OP}
+% between two matrices.
+% Note that this may not properly align vertically with the rows.
+\newcount\arrowcount
+\newcommand\arrows[1]{
+        \global\arrowcount#1
+        \ifnum\arrowcount>0
+                \begin{matrix}
+                \expandafter\nextarrow
+        \fi
+}
+\newcommand\nextarrow[1]{
+        \global\advance\arrowcount-1
+        \ifx\relax#1\relax\else \xrightarrow{#1}\fi
+        \ifnum\arrowcount=0
+                \end{matrix}
+        \else
+                \\
+                \expandafter\nextarrow
+        \fi
+}
+
 % vim: set ft=tex:
