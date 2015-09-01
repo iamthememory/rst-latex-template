@@ -115,4 +115,23 @@
 % Line segments.
 \newcommand*{\lineseg}[1]{\overline{#1}}
 
+% Augmented matrices.
+% Taken mostly from <http://tex.stackexchange.com/a/2238>
+%
+% Usage:
+% \begin{amatrix}{NUMBER OF COEFFICIENTS}
+% ...
+% \end{amatrix}
+%
+% Example:
+% \begin{amatrix}{2}
+% 1 & 2 & 3 \\
+% a & b & c
+% \end{amatrix}
+\newenvironment{amatrix}[1]{%
+  \left[\begin{array}{@{}*{#1}{c}|c@{}}
+}{%
+  \end{array}\right]
+}
+
 % vim: set ft=tex:
