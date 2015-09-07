@@ -2,6 +2,12 @@
 rst-latex-template Changelog
 ############################
 
+Version 0.2.2 (2015-09-07)
+==========================
+
+- Fix issue where code directives caused a LaTeX package option mismatch with
+  the ``color`` package.
+
 Version 0.2.1 (2015-09-01)
 ==========================
 
