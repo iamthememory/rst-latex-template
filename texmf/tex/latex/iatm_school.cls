@@ -22,6 +22,11 @@
 % Inner and outer margins.
 \geometry{inner=0.5in,outer=0.75in}
 
+% The header and footer (included by the Makefile) need color with usenames.
+% rst2latex.py loads it without usenames when code is color-coded.
+% Load it before that happens.
+\RequirePackage[usenames]{color}
+
 % Use the T1 font encoding
 \RequirePackage[T1]{fontenc}
 
