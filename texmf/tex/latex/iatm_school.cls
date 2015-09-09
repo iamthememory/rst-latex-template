@@ -3,7 +3,7 @@
 
 % Basic dependency stuff.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{iatm_school}[2015/09/07 rst2latex class for notes and homework]
+\ProvidesClass{iatm_school}[2015/09/08 rst2latex class for notes and homework]
 
 % Configure page layout.
 \RequirePackage{geometry}
@@ -163,5 +163,11 @@
                 \expandafter\nextarrow
         \fi
 }
+
+% The vector span operator.
+\DeclareMathOperator{\vspanop}{span}
+
+% The vector span operator, but accepting an argument it wraps in parentheses.
+\newcommand*{\vspan}[1]{\vspanop\left(#1\right)}
 
 % vim: set ft=tex:
