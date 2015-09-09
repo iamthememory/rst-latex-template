@@ -2,11 +2,19 @@
 rst-latex-template Changelog
 ############################
 
+Version 0.3.0 (2015-09-09)
+==========================
+
+- Add vector span operator ``\vspanop``
+
+- Add vector span macro ``\vspan{...}``, which applies the vector span operator
+  and wraps its argument in parentheses
+
 Version 0.2.2 (2015-09-07)
 ==========================
 
 - Fix issue where code directives caused a LaTeX package option mismatch with
-  the ``color`` package.
+  the ``color`` package
 
 Version 0.2.1 (2015-09-01)
 ==========================
