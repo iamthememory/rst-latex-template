@@ -2,6 +2,11 @@
 rst-latex-template Changelog
 ############################
 
+Version 0.4.0 (2015-09-16)
+==========================
+
+- Add floor and ceiling function macros, ``\floor*{x}`` and ``\ceil*{x}``
+
 Version 0.3.0 (2015-09-09)
 ==========================
 
