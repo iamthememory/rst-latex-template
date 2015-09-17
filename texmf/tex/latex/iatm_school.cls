@@ -3,7 +3,7 @@
 
 % Basic dependency stuff.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{iatm_school}[2015/09/16 rst2latex class for notes and homework]
+\ProvidesClass{iatm_school}[2015/09/17 rst2latex class for notes and homework]
 
 % Configure page layout.
 \RequirePackage{geometry}
@@ -94,7 +94,8 @@
 \renewcommand*{\impliedby}{\DOTSB\;\Leftarrow\;}
 
 % Use vect for vectors.
-\newcommand*{\vect}[1]{\boldsymbol{#1}}
+\RequirePackage{bm}
+\newcommand*{\vect}[1]{\boldsymbol{\mathbf{#1}}}
 
 % Unit vectors.
 \newcommand*{\uvect}[1]{%
