@@ -2,6 +2,11 @@
 rst-latex-template Changelog
 ############################
 
+Version 0.4.1 (2015-09-17)
+==========================
+
+- Remove italics from vectors, when possible.
+
 Version 0.4.0 (2015-09-16)
 ==========================
 
