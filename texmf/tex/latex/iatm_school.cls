@@ -3,7 +3,7 @@
 
 % Basic dependency stuff.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{iatm_school}[2015/09/17 rst2latex class for notes and homework]
+\ProvidesClass{iatm_school}[2015/09/20 rst2latex class for notes and homework]
 
 % Configure page layout.
 \RequirePackage{geometry}
@@ -170,6 +170,9 @@
 
 % The vector span operator, but accepting an argument it wraps in parentheses.
 \newcommand*{\vspan}[1]{\vspanop\left(#1\right)}
+
+% The matrix trace operator.
+\DeclareMathOperator{\vtrop}{tr}
 
 % Ceiling and floor functions.
 % Use like: \floor*{x}
