@@ -185,6 +185,9 @@
 % Matrix nullity operator.
 \DeclareMathOperator{\nullityop}{nullity}
 
+% Matrix null space operator.
+\DeclareMathOperator{\nullop}{null}
+
 % Ceiling and floor functions.
 % Use like: \floor*{x}
 \RequirePackage{mathtools}
