@@ -177,6 +177,11 @@
 % Matrix rank operator.
 \DeclareMathOperator{\rankop}{rank}
 
+% Matrix row and col operators.
+% e.g. row(A) and col(A)
+\DeclareMathOperator{\colop}{col}
+\DeclareMathOperator{\rowop}{row}
+
 % Ceiling and floor functions.
 % Use like: \floor*{x}
 \RequirePackage{mathtools}
