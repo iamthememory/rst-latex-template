@@ -182,6 +182,9 @@
 \DeclareMathOperator{\colop}{col}
 \DeclareMathOperator{\rowop}{row}
 
+% Matrix nullity operator.
+\DeclareMathOperator{\nullityop}{nullity}
+
 % Ceiling and floor functions.
 % Use like: \floor*{x}
 \RequirePackage{mathtools}
