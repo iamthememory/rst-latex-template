@@ -3,7 +3,7 @@
 
 % Basic dependency stuff.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{iatm_school}[2015/09/20 rst2latex class for notes and homework]
+\ProvidesClass{iatm_school}[2015/09/27 rst2latex class for notes and homework]
 
 % Configure page layout.
 \RequirePackage{geometry}
@@ -173,6 +173,9 @@
 
 % The matrix trace operator.
 \DeclareMathOperator{\vtrop}{tr}
+
+% Matrix rank operator.
+\DeclareMathOperator{\rankop}{rank}
 
 % Ceiling and floor functions.
 % Use like: \floor*{x}
