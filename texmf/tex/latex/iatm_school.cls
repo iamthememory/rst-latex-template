@@ -3,7 +3,7 @@
 
 % Basic dependency stuff.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{iatm_school}[2015/10/13 rst2latex class for notes and homework]
+\ProvidesClass{iatm_school}[2015/10/14 rst2latex class for notes and homework]
 
 % Configure page layout.
 \RequirePackage{geometry}
@@ -26,6 +26,10 @@
 % rst2latex.py loads it without usenames when code is color-coded.
 % Load it before that happens.
 \RequirePackage[usenames]{color}
+
+% The physics package has several convenient macros for, for example,
+% derivatives.
+\RequirePackage{physics}
 
 % Use the T1 font encoding
 \RequirePackage[T1]{fontenc}
@@ -78,10 +82,6 @@
 % dy/dx
 % Use as \Diff{y}{x}
 \newcommand*{\Diff}[2]{\frac{\diff{#1}}{\diff{#2}}}
-
-% Absolute value and norm.
-\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 
 % Norm for plain vectors.
 \newcommand*{\vnorm}[1]{\norm{\vect{#1}}}
