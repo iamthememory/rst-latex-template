@@ -3,7 +3,7 @@
 
 % Basic dependency stuff.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{iatm_school}[2015/09/27 rst2latex class for notes and homework]
+\ProvidesClass{iatm_school}[2015/10/13 rst2latex class for notes and homework]
 
 % Configure page layout.
 \RequirePackage{geometry}
@@ -193,5 +193,8 @@
 \RequirePackage{mathtools}
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 \DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+% Use partitioned matrices.
+\RequirePackage{pmat}
 
 % vim: set ft=tex:
