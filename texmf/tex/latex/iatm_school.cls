@@ -135,7 +135,7 @@
 % a & b & c
 % \end{amatrix}
 \newenvironment{amatrix}[1]{%
-  \left[\begin{array}{@{}*{#1}{c}|c@{}}
+  \left[\begin{array}{@{}*{#1}{r}|r@{}}
 }{%
   \end{array}\right]
 }
