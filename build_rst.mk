@@ -59,6 +59,9 @@ pdf: $(pdfs)
 %.png: %.svg
 	inkscape -d 90 -f $< -e $@
 
+%.png: %.uml
+	plantuml -tpng $<
+
 clean:
 	rm -f *.tex *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
 	rm -f *.fdb_latexmk *.ghead *.png
