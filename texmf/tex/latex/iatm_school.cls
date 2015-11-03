@@ -197,4 +197,12 @@
 % Use partitioned matrices.
 \RequirePackage{pmat}
 
+% Change the syntax highlighting colors.
+\newcommand\DUrolecomment[1]{\textcolor[rgb]{0.00,0.20,0.50}{#1}}
+\newcommand\DUrolekeyword[1]{\textcolor[rgb]{0.40,0.40,0.00}{\textbf{#1}}}
+\newcommand\DUrolename[1]{\textcolor[rgb]{0.00,0.40,0.20}{#1}}
+\newcommand\DUrolebuiltin[1]{\textbf{#1}}
+\newcommand\DUrolestring[1]{\textcolor[rgb]{0.30,0.00,0.30}{\textit{#1}}}
+\newcommand\DUroleoperator[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+
 % vim: set ft=tex:
