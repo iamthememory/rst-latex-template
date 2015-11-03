@@ -3,7 +3,7 @@
 
 % Basic dependency stuff.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{iatm_school}[2015/10/14 rst2latex class for notes and homework]
+\ProvidesClass{iatm_school}[2015/11/03 rst2latex class for notes and homework]
 
 % Configure page layout.
 \RequirePackage{geometry}
