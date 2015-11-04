@@ -24,7 +24,7 @@ pdf: $(pdfs)
 
 %.ghead: %.rst
 	# The commit hash colors
-	echo "\definecolor{pageonecommithashcolor}{gray}{0.5}" > $@
+	echo "\definecolor{pageonecommithashcolor}{gray}{0.3}" > $@
 	echo "\definecolor{commithashcolor}{gray}{0.8}" >> $@
 	# BEGIN: The headers for "plain" pages (e.g. the first page).
 	echo "\fancypagestyle{plain}{%" >> $@
