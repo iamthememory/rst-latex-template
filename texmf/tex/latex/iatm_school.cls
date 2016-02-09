@@ -76,6 +76,9 @@
 % polynomials).
 \RequirePackage{mathrsfs}
 
+% Proof formatting.
+\RequirePackage{nd}
+
 % Grow outer delimiters (like parentheses).
 \delimitershortfall -1sp
 
