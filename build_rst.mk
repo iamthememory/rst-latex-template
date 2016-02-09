@@ -64,7 +64,7 @@ pdf: $(pdfs)
 
 clean:
 	rm -f *.tex *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
-	rm -f *.fdb_latexmk *.ghead *.png
+	rm -f *.fdb_latexmk *.ghead
 
 reallyclean: clean
 	rm -f *.pdf
