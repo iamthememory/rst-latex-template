@@ -103,6 +103,9 @@
 \newcommand*{\limpby}{\DOTSB\;\leftarrow\;}
 \newcommand*{\liff}{\DOTSB\;\leftrightarrow\;}
 
+% Define a logical xor.
+\newcommand*{\lxor}{\oplus}
+
 % Use vect for vectors.
 \RequirePackage{bm}
 \newcommand*{\vect}[1]{\boldsymbol{\mathbf{#1}}}
