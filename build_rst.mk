@@ -50,8 +50,6 @@ pdf: $(pdfs)
 %.pdf: %.tex %.ghead
 	export TEXMFHOME="$(RST_LATEX_TEMPLATE_DIR):$$TEXMFHOME" && \
 		latexmk -f -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make $<
-	rm -f *.aux *.bcf *.fls *.idx *.ind *.lof *.lot *.out *.toc *.log
-	rm -f *.fdb_latexmk
 
 %.png: %.gp
 	gnuplot $<
