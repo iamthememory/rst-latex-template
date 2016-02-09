@@ -97,6 +97,12 @@
 \renewcommand*{\implies}{\DOTSB\;\Rightarrow\;}
 \renewcommand*{\impliedby}{\DOTSB\;\Leftarrow\;}
 
+% Define thinner arrowed implication arrows, for texts which distinguish between
+% \Rightarrow and \rightarrow.
+\newcommand*{\limp}{\DOTSB\;\rightarrow\;}
+\newcommand*{\limpby}{\DOTSB\;\leftarrow\;}
+\newcommand*{\liff}{\DOTSB\;\leftrightarrow\;}
+
 % Use vect for vectors.
 \RequirePackage{bm}
 \newcommand*{\vect}[1]{\boldsymbol{\mathbf{#1}}}
