@@ -112,6 +112,10 @@
 % Define a logical xor.
 \newcommand*{\lxor}{\oplus}
 
+% Divides and does not divide.
+\newcommand*{\divides}{\mid}
+\newcommand*{\notdivides}{\nmid}
+
 % Use vect for vectors.
 \RequirePackage{bm}
 \newcommand*{\vect}[1]{\boldsymbol{\mathbf{#1}}}
