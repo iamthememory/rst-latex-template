@@ -5,6 +5,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{iatm_school}[2015/11/24 rst2latex class for notes and homework]
 
+% Use UTF-8.
+\RequirePackage[utf8]{inputenc}
+
 % Configure page layout.
 \RequirePackage{geometry}
 % Use letterpaper.
