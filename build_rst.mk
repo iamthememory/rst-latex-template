@@ -54,6 +54,9 @@ pdf: $(pdfs)
 %.png: %.gp
 	gnuplot $<
 
+%.eps: %.svg
+	inkscape -f $< --export-eps=$@
+
 %.png: %.svg
 	inkscape -d 90 -f $< -e $@
 
