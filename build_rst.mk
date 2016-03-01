@@ -63,6 +63,9 @@ pdf: $(pdfs)
 %.png: %.svg
 	inkscape -d 90 -f $< -e $@
 
+%.ps: %.svg
+	inkscape -f $< --export-ps=$@
+
 %.png: %.uml
 	plantuml -tpng $<
 
