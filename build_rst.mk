@@ -57,6 +57,9 @@ pdf: $(pdfs)
 %.eps: %.svg
 	inkscape -f $< --export-eps=$@
 
+%.pdf: %.svg
+	inkscape -f $< --export-pdf=$@
+
 %.png: %.svg
 	inkscape -d 90 -f $< -e $@
 
