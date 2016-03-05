@@ -103,11 +103,18 @@
 \renewcommand*{\implies}{\DOTSB\;\Rightarrow\;}
 \renewcommand*{\impliedby}{\DOTSB\;\Leftarrow\;}
 
+\renewcommand*{\nimplies}{\DOTSB\;\not\Rightarrow\;}
+\renewcommand*{\nimpliedby}{\DOTSB\;\not\Leftarrow\;}
+
 % Define thinner arrowed implication arrows, for texts which distinguish between
 % \Rightarrow and \rightarrow.
 \newcommand*{\limp}{\DOTSB\;\rightarrow\;}
 \newcommand*{\limpby}{\DOTSB\;\leftarrow\;}
 \newcommand*{\liff}{\DOTSB\;\leftrightarrow\;}
+
+\newcommand*{\lnimp}{\DOTSB\;\not\rightarrow\;}
+\newcommand*{\lnimpby}{\DOTSB\;\not\leftarrow\;}
+\newcommand*{\lniff}{\DOTSB\;\not\leftrightarrow\;}
 
 % Define a logical xor.
 \newcommand*{\lxor}{\oplus}
