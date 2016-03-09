@@ -103,8 +103,8 @@
 \renewcommand*{\implies}{\DOTSB\;\Rightarrow\;}
 \renewcommand*{\impliedby}{\DOTSB\;\Leftarrow\;}
 
-\renewcommand*{\nimplies}{\DOTSB\;\not\Rightarrow\;}
-\renewcommand*{\nimpliedby}{\DOTSB\;\not\Leftarrow\;}
+\newcommand*{\nimplies}{\DOTSB\;\not\Rightarrow\;}
+\newcommand*{\nimpliedby}{\DOTSB\;\not\Leftarrow\;}
 
 % Define thinner arrowed implication arrows, for texts which distinguish between
 % \Rightarrow and \rightarrow.
