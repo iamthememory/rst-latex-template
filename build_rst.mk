@@ -54,6 +54,15 @@ pdf: $(pdfs)
 %.png: %.gp
 	gnuplot $<
 
+%.png: %.dot
+	dot -Tpng $< -o $@
+
+%.ps: %.dot
+	dot -Tps2 $< -o $@
+
+%.pdf: %.ps
+	ps2pdf $<
+
 %.eps: %.svg
 	inkscape -f $< --export-eps=$@
 
